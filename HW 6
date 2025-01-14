@@ -1,0 +1,68 @@
+Week 6 Project
+CCL@DESKTOP-Q4MEPLR MINGW64 ~
+$ cd dev
+
+CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev
+$ ls
+Homework3/  Hwk5/  Repo-Practice/  RevisedHWK4/  ccl_cohort8/  cli/
+
+CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev
+$ git init
+Initialized empty Git repository in C:/Users/CCL/dev/.git/
+
+CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev (master)
+$ git clone https://github.com/ASmith202/Project-One.git
+Cloning into 'Project-One'...
+warning: You appear to have cloned an empty repository.
+
+CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev (master)
+$ cd Project One 
+
+HTML:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Sub Shop</title>
+    
+<link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Sub Way 2.0</h1>
+    <p>Make a delicious custom-made sub in seconds</p>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order Online</a>
+    <a href="#contact">Contact Us</a>
+</nav>
+
+<section id="menu">
+    <h2>
+CSS :
+body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6f61;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;

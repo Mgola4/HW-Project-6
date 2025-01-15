@@ -1,68 +1,241 @@
 Week 6 Project
-CCL@DESKTOP-Q4MEPLR MINGW64 ~
-$ cd dev
-
-CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev
-$ ls
-Homework3/  Hwk5/  Repo-Practice/  RevisedHWK4/  ccl_cohort8/  cli/
-
-CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev
-$ git init
-Initialized empty Git repository in C:/Users/CCL/dev/.git/
-
-CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev (master)
-$ git clone https://github.com/ASmith202/Project-One.git
-Cloning into 'Project-One'...
-warning: You appear to have cloned an empty repository.
-
-CCL@DESKTOP-Q4MEPLR MINGW64 ~/dev (master)
-$ cd Project One 
-
-HTML:
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Sub Shop</title>
-    
+    <style>
+        #menu h2 {
+            text-align: center;
+        }
+    </style>
 <link rel="stylesheet" href="styles.css">
-
-
 </head>
 <body>
-
 <header>
-    <h1>Welcome to Sub Way 2.0</h1>
-    <p>Make a delicious custom-made sub in seconds</p>
+    <h1>Welcome to the Sub Lab </h1>
+    <p>Come to The Sub Lab , Where Your Sub Is the Perfect Experiment!</p>
 </header>
-
+<img src="3 Sub Pic.jpg" alt="3 Sub pic"> <img src="3 Sub Pic.jpg" alt="3 Sub pic">
 <nav>
     <a href="#menu">Menu</a>
     <a href="#order">Order Online</a>
     <a href="#contact">Contact Us</a>
 </nav>
-
 <section id="menu">
-    <h2>
-CSS :
+    <h2>Our Menu</h2>
+    <div class="menu-item">
+        <img src="Measure Sub.jpg" alt="Ruler Sub" width="880" height="320">
+        <h3>Select Your Size:</h3>
+        <button class="ingredient-button" onclick="selectSize('Snack')">Snack</button>
+        <button class="ingredient-button" onclick="selectSize('6 inch')">6 inch</button>
+        <button class="ingredient-button" onclick="selectSize('12 inch')">12 inch</button>
+        <button class="ingredient-button" onclick="selectSize('24 inch')">24 inch</button>
+        <button class="ingredient-button" onclick="selectSize('Party Size')">Party Size</button>
+    </div>
+    <div class="menu-item">
+        <img src="Bread Pic 3.jpg" alt="Bread Pic" width="880" height="320">
+        <h3>Select Your Bread:</h3>
+        <button class="ingredient-button" onclick="selectBread('Italian')">Italian</button>
+        <button class="ingredient-button" onclick="selectBread('Italian Herb & Cheese')">Italian Herb & Cheese</button>
+        <button class="ingredient-button" onclick="selectBread('Wheat')">Wheat</button>
+        <button class="ingredient-button" onclick="selectBread('Multi-Grain')">Multi-Grain</button>
+        <button class="ingredient-button" onclick="selectBread('Honey-Oat')">Honey-Oat</button>
+    </div>
+    <div class="menu-item">
+        <img src="Assorted Meat Pic.avif" alt="Meat Pic" width="880" height="320">
+        <h3>Select your Protein:</h3>
+        <button class="ingredient-button" onclick="selectProtein('Chicken')">Chicken</button>
+        <button class="ingredient-button" onclick="selectProtein('Pepperoni')">Pepperoni</button>
+        <button class="ingredient-button" onclick="selectProtein('Salami')">Salami</button>
+        <button class="ingredient-button" onclick="selectProtein('Roast Beef')">Roast Beef</button>
+        <button class="ingredient-button" onclick="selectProtein('Turkey')">Turkey</button>
+        <button class="ingredient-button" onclick="selectProtein('Tofu')">Tofu</button>
+        <button class="ingredient-button" onclick="selectProtein('Ham')">Ham</button>
+        <button class="ingredient-button" onclick="selectProtein('Steak')">Steak</button>
+        <button class="ingredient-button" onclick="selectProtein('Fish')">Fish</button>
+    </div>
+    <div class="menu-item">
+        <img src="Assorted Veggie Pic.jpeg" alt="Veggie Pic" width="880" height="320">
+        <h3>Select your Toppings:</h3>
+        <button class="ingredient-button" onclick="selectTopping('Lettuce')">Lettuce</button>
+        <button class="ingredient-button" onclick="selectTopping('Onion')">Onion</button>
+        <button class="ingredient-button" onclick="selectTopping('Tomatoes')">Tomatoes</button>
+        <button class="ingredient-button" onclick="selectTopping('Spinach')">Spinach</button>
+        <button class="ingredient-button" onclick="selectTopping('Banana Peppers')">Banana Peppers</button>
+        <button class="ingredient-button" onclick="selectTopping('Jalapeno')">Jalapeno</button>
+        <button class="ingredient-button" onclick="selectTopping('Green Pepper')">Green Pepper</button>
+        <button class="ingredient-button" onclick="selectTopping('Olives')">Olives</button>
+        <button class="ingredient-button" onclick="selectTopping('Pickles')">Pickles</button>
+        <button class="ingredient-button" onclick="selectTopping('Mushrooms')">Mushrooms</button>
+        <button class="ingredient-button" onclick="selectTopping('Hummus')">Hummus</button>
+        <button class="ingredient-button" onclick="selectTopping('Guacamole')">Guacamole</button>
+    </div>
+    <div class="menu-item">
+        <img src="Assorted Cheese Pic.jpeg" alt="Cheese Pic" width="880" height="320">
+        <h3>Select your Cheese:</h3>
+        <button class="ingredient-button" onclick="selectCheese('American')">American</button>
+        <button class="ingredient-button" onclick="selectCheese('Cheddar')">Cheddar</button>
+        <button class="ingredient-button" onclick="selectCheese('Swiss')">Swiss</button>
+        <button class="ingredient-button" onclick="selectCheese('Provolone')">Provolone</button>
+        <button class="ingredient-button" onclick="selectCheese('Colby Jack')">Colby Jack</button>
+        <button class="ingredient-button" onclick="selectCheese('Pepper Jack')">Pepper Jack</button>
+        <button class="ingredient-button" onclick="selectCheese('Mozzarella')">Mozzarella</button>
+        <button class="ingredient-button" onclick="selectCheese('Vegan Cheese')">Vegan Cheese</button>
+    </div>
+    <div class="menu-item">
+        <img src="Condiment Pic.jpeg" alt="Condiment Pic" width="880" height="320">
+        <h3>Select your Condiments:</h3>
+        <button class="ingredient-button" onclick="selectCondiment('Ranch')">Ranch</button>
+        <button class="ingredient-button" onclick="selectCondiment('Italian')">Italian</button>
+        <button class="ingredient-button" onclick="selectCondiment('Honey Mustard')">Honey Mustard</button>
+        <button class="ingredient-button" onclick="selectCondiment('Mayo')">Mayo</button>
+        <button class="ingredient-button" onclick="selectCondiment('Marinara')">Marinara</button>
+        <button class="ingredient-button" onclick="selectCondiment('BBQ Sauce')">BBQ Sauce</button>
+        <button class="ingredient-button" onclick="selectCondiment('Mustard')">Mustard</button>
+        <button class="ingredient-button" onclick="selectCondiment('Spicy Brown Mustard')">Spicy Brown Mustard</button>
+        <button class="ingredient-button" onclick="selectCondiment('Spicy Ranch')">Spicy Ranch</button>
+        <button class="ingredient-button" onclick="selectCondiment('Teriyaki')">Teriyaki</button>
+        <button class="ingredient-button" onclick="selectCondiment('Sriracha Sauce')">Sriracha Sauce</button>
+        <button class="ingredient-button" onclick="selectCondiment('Olive Oil')">Olive Oil</button>
+        <button class="ingredient-button" onclick="selectCondiment('Salt & Pepper')">Salt & Pepper</button>
+        <button class="ingredient-button" onclick="selectCondiment('Oregano')">Oregano</button>
+    </div>
+</section>
+<section id="order">
+    <h2>Order Online</h2>
+    <p>Ready to make your own custom sub? Fill out the form below to place your order!</p>
+    <form action="submit_order.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="special">Special Requests:</label>
+        <textarea id="special" name="special" rows="4" placeholder="Add any special instructions here..."></textarea>
+        <input type="submit" value="Place Order">
+    </form>
+</section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question or feedback? Get in touch with us below!</p>
+        <label for="contact_name">Your Name:</label>
+        <input type="text" id="contact_name" name="contact_name" required>
+        <label for="contact_email">Your Email:</label>
+        <input type="email" id="contact_email" name="contact_email" required>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+        <input type="submit" value="Send Message">
+    </form>
+</section>
+<footer>
+    <p>&copy; 2025 Custom Sub Shop. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
+8:24
+Here is CSS:
+8:24
 body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #3004F7;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #ff6f61;
+            background-color: blue;
             color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #333;
-            color: white;
+            background-color: white;
+            color: red;
             padding: 10px;
             text-align: center;
         }
         nav a {
+            color: red;
+            text-decoration: none;
+            padding: 14px 20px;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            background-color: #ddd;
             color: white;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            color: white;
+        }
+        .ingredient-button {
+            background-color: black;
+            color: red;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .ingredient-button:hover {
+            background-color: black;
+        }
+        footer {
+            background-color:white;
+            color: red;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        form {
+            background-color:red;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 0 auto;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        input[type="submit"] {
+            background-color: #FF6F61;
+            color: white;
+            border: none;
+        }
+8:24
+This is for script:
+8:24
+function selectProtein(protein) {
+        alert("You selected: " + protein)
+    }
+    function selectCondiment(condiment) {
+        alert("You selected: " + condiment)
+    }
+function selectTopping(topping) {
+    alert("You selected topping: " + topping);
+}
+function selectCheese(cheese) {
+    alert("You selected cheese: " + cheese);
+}
+function selectBread(bread) {
+    alert("You selected bread: " + bread);
+}
+function selectSize(size) {
+    alert("You selected size: " + size);
+}
+
+
+
+
+
+
+

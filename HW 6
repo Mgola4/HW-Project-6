@@ -234,7 +234,28 @@ function selectSize(size) {
 }
 
 
-
+DOM MANUPULATION IDEAS 
+let cheeseButton = document.getElementById("cheeseButton")
+let cheese = document.getElementById("cheese")
+cheeseButton.addEventListener("click", function () {
+    cheese.classList.toggle("hidden")
+    cheeseButton.classList.toggle("selected")
+})
+[8:44 PM] Dylan Foley
+<h1>my sub</h1>
+    <button id="cheeseButton">cheese</button>
+    <div>
+        <ul>
+            <li class="hidden" id="cheese">cheese</li>
+        </ul>
+    </div>
+[8:44 PM] Dylan Foley
+.hidden {
+    display: none;
+}
+.selected {
+    background-color: green;
+}
 
 
 

@@ -1,0 +1,948 @@
+<html lang="en">
++
+<head>
++
+<meta charset="UTF-8">
++
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
++
+<title>Custom Sub Shop</title>
++
+<style>
++
+#menu h2 {
++
+text-align: center;
++
+}
++
+</style>
++
+<link rel="stylesheet" href="styles.css">
++
+</head>
++
+<body>
++
+<header>
++
+<h1>Welcome to the Sub Lab &#129386; &#128300;</h1>
++
+<p>Come to The Sub Lab , Where Your Sub Is the Perfect Experiment!</p>
++
+</header>
++
+<img src="3 Sub Pic.jpg" alt="3 Sub pic"> <img src="3 Sub Pic.jpg" alt="3 Sub pic">
++
+<nav>
++
+<a href="#menu">Menu</a>
++
+<a href="#order">Order Online</a>
++
+<a href="#contact">Contact Us</a>
++
+</nav>
++
+<section id="menu">
++
+<h2>Our Menu</h2>
++
+<div class="menu-item">
++
+<img src="Measure Sub.jpg" alt="Ruler Sub" width="880" height="320">
++
+<h3>Select Your Size &#128298;:</h3>
++
+<button class="ingredient-button" onclick="selectSize(this)">Snack</button>
++
+<button class="ingredient-button" onclick="selectSize(this)">6 inch</button>
++
+<button class="ingredient-button" onclick="selectSize(this)">12 inch</button>
++
+<button class="ingredient-button" onclick="selectSize(this)">24 inch</button>
++
+<button class="ingredient-button" onclick="selectSize(this)">Party Size</button>
++
+</div>
++
+<div class="menu-item">
++
+<img src="Bread Pic 3.jpg" alt="Bread Pic" width="880" height="320">
++
+<h3>Select Your Bread &#129366;:</h3>
++
+<button class="ingredient-button" onclick="selectBread(this)">Italian</button>
++
+<button class="ingredient-button" onclick="selectBread(this)">Italian Herb & Cheese</button>
++
+<button class="ingredient-button" onclick="selectBread(this)">Wheat</button>
++
+<button class="ingredient-button" onclick="selectBread(this)">Multi-Grain</button>
++
+<button class="ingredient-button" onclick="selectBread(this)">Honey-Oat</button>
++
+</div>
++
+<div class="menu-item">
++
+<img src="Assorted Meat Pic.avif" alt="Meat Pic" width="880" height="320">
++
+<h3>Select your Protein &#129385;:</h3>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Chicken</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Pepperoni</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Salami</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Roast Beef</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Turkey</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Tofu</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Ham</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Steak</button>
++
+<button class="ingredient-button" onclick="selectProtein(this)">Fish</button>
++
+</div>
++
+<div class="menu-item">
++
+<img src="Assorted Veggie Pic.jpeg" alt="Veggie Pic" width="880" height="320">
++
+<h3>Select your Toppings &#129388;:</h3>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Lettuce</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Onion</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Tomatoes</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Spinach</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Banana Peppers</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Jalapeno</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Green Pepper</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Olives</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Pickles</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Mushrooms</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Hummus</button>
++
+<button class="ingredient-button" onclick="selectTopping(this)">Guacamole</button>
++
+</div>
++
+<div class="menu-item">
++
+<img src="Assorted Cheese Pic.jpeg" alt="Cheese Pic" width="880" height="320">
++
+<h3>Select your Cheese &#129472;:</h3>
++
+<button class="ingredient-button" onclick="selectCheese(this)">American</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Cheddar</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Swiss</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Provolone</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Colby Jack</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Pepper Jack</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Mozzarella</button>
++
+<button class="ingredient-button" onclick="selectCheese(this)">Vegan Cheese</button>
++
+</div>
++
+<div class="menu-item">
++
+<img src="Condiment Pic.jpeg" alt="Condiment Pic" width="880" height="320">
++
+<h3>Select your Condiments &#129474;:</h3>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Ranch</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Italian</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Honey Mustard</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Mayo</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Marinara</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">BBQ Sauce</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Mustard</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Spicy Brown Mustard</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Spicy Ranch</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Teriyaki</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Sriracha Sauce</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Olive Oil</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Salt & Pepper</button>
++
+<button class="ingredient-button" onclick="selectCondiment(this)">Oregano</button>
++
+</div>
++
+</section>
++
+<section id="my-custom-sub">
++
+<h2>My Custom Sub</h2>
++
+<ul id="custom-sub-list">
++
+</ul>
++
+</section>
++
+<img src="eating-hungry.gif"Sub Sandwich GIF/>
++
+<section id="order">
++
+<h2>Order Online</h2>
++
+<p>Ready to make your own custom sub? Fill out the form below to place your order!</p>
++
+<form action="submit_order.php" method="POST">
++
+<label for="name">Your Name:</label>
++
+<input type="text" id="name" name="name" required>
++
+<label for="special">Special Requests:</label>
++
+<textarea id="special" name="special" rows="4" placeholder="Add any special instructions here..."></textarea>
++
+<input type="submit" value="Place Order">
++
+</form>
++
+</section>
++
+<section id="contact">
++
+<h2>Contact Us</h2>
++
+<p>Have a question or feedback? Get in touch with us below!</p>
++
+<label for="contact_name">Your Name:</label>
++
+<input type="text" id="contact_name" name="contact_name" required>
++
+<label for="contact_email">Your Email:</label>
++
+<input type="email" id="contact_email" name="contact_email" required>
++
+<label for="message">Your Message:</label>
++
+<textarea id="message" name="message" rows="4" required></textarea>
++
+<input type="submit" value="Send Message">
++
+</form>
++
+</section>
++
+<footer>
++
+<p>&copy; 2025 Custom Sub Shop. All rights reserved.</p>
++
+</footer>
++
+<script src="script.js"></script>
++
+</section>
++
+</body>
++
+</html>
++
+8:58
++
+This is for Scripts.js:
++
+8:58
++
+function selectProtein(protein) {
++
+alert("You selected: " + protein)
++
+}
++
+function selectCondiment(condiment) {
++
+alert("You selected: " + condiment)
++
+}
++
+function selectTopping(topping) {
++
+alert("You selected topping: " + topping);
++
+}
++
+function selectCheese(cheese) {
++
+alert("You selected cheese: " + cheese);
++
+}
++
+function selectBread(bread) {
++
+alert("You selected bread: " + bread);
++
+}
++
+function selectSize(size) {
++
+alert("You selected size: " + size);
++
+}
++
+function selectSize(button) {
++
+let buttons = button.parentElement.getElementsByClassName('ingredient-button');
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+}
++
+function selectProtein(button) {
++
+let buttons = button.parentElement.getElementsByClassName('ingredient-button');
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+}
++
+function selectCheese(button) {
++
+let buttons = button.parentElement.getElementsByClassName('ingredient-button');
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+}
++
+function selectTopping(button) {
++
+let buttons = button.parentElement.getElementsByClassName('ingredient-button');
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+}
++
+function selectCondiment(button) {
++
+let buttons = button.parentElement.getElementsByClassName('ingredient-button');
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+}
++
+function selectBread(button) {
++
+let buttons = button.parentElement.getElementsByClassName('ingredient-button');
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+}
++
+let sizeSelected = false
++
+function selectSize(button) {
++
+let buttons = button.parentElement.getElementsByClassName('Size-button');
++
+if (!sizeSelected) {
++
+let breadButtons = document.querySelectorAll('.Bread-button.selected');
++
+breadButtons.forEach(function (breadButton) {
++
+breadButton.classList.remove('selected');
++
+});
++
+sizeSelected = true;
++
+}
++
+for (let i = 0; i < buttons.length; i++) {
++
+buttons[i].classList.remove('selected');
++
+}
++
+button.classList.add('selected');
++
+const selectedItem = button.textContent;
++
+if (!isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+}
++
+function isItemAlreadySelected(item) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === item) {
++
+return true;
++
+}
++
+}
++
+return false;
++
+}
++
+const sizeButtons = document.querySelectorAll('.Size-button');
++
+sizeButtons.forEach(button => {
++
+button.addEventListener('click', function() {
++
+selectSize(button);
++
+});
++
+});
++
+const BreadButtons = document.querySelectorAll('.Bread-button');
++
+BreadButtons.forEach(button => {
++
+button.addEventListener('click', function() {
++
+selectBread(button);
++
+});
++
+});
++
+const ProteinButtons = document.querySelectorAll('.Protein-button');
++
+ProteinButtons.forEach(button => {
++
+button.addEventListener('click', function() {
++
+selectProtein(button);
++
+});
++
+});
++
+const CheeseButtons = document.querySelectorAll('.Cheese-button');
++
+CheeseButtons.forEach(button => {
++
+button.addEventListener('click', function() {
++
+selectCheese(button);
++
+});
++
+});
++
+const ToppingsButtons = document.querySelectorAll('.Toppings-button');
++
+ToppingsButtons.forEach(button => {
++
+button.addEventListener('click', function() {
++
+selectToppings(button);
++
+});
++
+});
++
+const CondimentButtons = document.querySelectorAll('.Condiment-button');
++
+CondimentButtons.forEach(button => {
++
+button.addEventListener('click', function() {
++
+selectCondiment(button);
++
+});
++
+});
++
+function selectBread(button) {
++
+button.classList.toggle('selected');
++
+const selectedItem = button.textContent;
++
+if (button.classList.contains('selected') && !isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+else if (!button.classList.contains('selected')) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === selectedItem) {
++
+listItems[i].remove();
++
+break;
++
+}
++
+}
++
+}
++
+}
++
+function selectTopping(button) {
++
+button.classList.toggle('selected');
++
+const selectedItem = button.textContent;
++
+if (button.classList.contains('selected') && !isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+else if (!button.classList.contains('selected')) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === selectedItem) {
++
+listItems[i].remove();
++
+break;
++
+}
++
+}
++
+}
++
+}
++
+function selectSize(button) {
++
+button.classList.toggle('selected');
++
+const selectedItem = button.textContent;
++
+if (button.classList.contains('selected') && !isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+else if (!button.classList.contains('selected')) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === selectedItem) {
++
+listItems[i].remove();
++
+break;
++
+}
++
+}
++
+}
++
+}
++
+function selectProtein(button) {
++
+button.classList.toggle('selected');
++
+const selectedItem = button.textContent;
++
+if (button.classList.contains('selected') && !isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+else if (!button.classList.contains('selected')) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === selectedItem) {
++
+listItems[i].remove();
++
+break;
++
+}
++
+}
++
+}
++
+}
++
+function selectCheese(button) {
++
+button.classList.toggle('selected');
++
+const selectedItem = button.textContent;
++
+if (button.classList.contains('selected') && !isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+else if (!button.classList.contains('selected')) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === selectedItem) {
++
+listItems[i].remove();
++
+break;
++
+}
++
+}
++
+}
++
+}
++
+function selectCondiment(button) {
++
+button.classList.toggle('selected');
++
+const selectedItem = button.textContent;
++
+if (button.classList.contains('selected') && !isItemAlreadySelected(selectedItem)) {
++
+const li = document.createElement('li');
++
+li.textContent = selectedItem;
++
+document.getElementById('custom-sub-list').appendChild(li);
++
+}
++
+else if (!button.classList.contains('selected')) {
++
+const listItems = document.getElementById('custom-sub-list').getElementsByTagName('li');
++
+for (let i = 0; i < listItems.length; i++) {
++
+if (listItems[i].textContent === selectedItem) {
++
+listItems[i].remove();
++
+break;
++
+}
++
+}
++
+}
++
+}
++
+8:58
++
+This is for Style CSS:
++
+8:59
++
+body {
++
+font-family: Arial, sans-serif;
++
+background-color: #3004F7;
++
+margin: 0;
++
+padding: 0;
++
+}
++
+header {
++
+background-color: blue;
++
+color: white;
++
+padding: 20px;
++
+text-align: center;
++
+}
++
+nav {
++
+background-color: white;
++
+color: red;
++
+padding: 10px;
++
+text-align: center;
++
+}
++
+nav a {
++
+color: red;
++
+text-decoration: none;
++
+padding: 14px 20px;
++
+margin: 0 10px;
++
+}
++
+nav a:hover {
++
+background-color: #ddd;
++
+color: white;
++
+}
++
+section {
++
+padding: 20px;
++
+}
++
+h2 {
++
+color: white;
++
+}
++
+.ingredient-button {
++
+background-color: black;
++
+color: red;
++
+padding: 10px 20px;
++
+margin: 5px;
++
+border: none;
++
+cursor: pointer;
++
+font-size: 16px;
++
+border-radius: 5px;
++
+}
++
+.ingredient-button:hover {
++
+background-color: black;
++
+}
++
+footer {
++
+background-color:white;
++
+color: red;
++
+text-align: center;
++
+padding: 10px;
++
+position: fixed;
++
+width: 100%;
++
+bottom: 0;
++
+}
++
+form {
++
+background-color:red;
++
+padding: 20px;
++
+border-radius: 5px;
++
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
++
+width: 300px;
++
+margin: 0 auto;
++
+}
++
+input, textarea {
++
+width: 100%;
++
+padding: 10px;
++
+margin: 10px 0;
++
+border-radius: 5px;
++
+border: 1px solid #ddd;
++
+}
++
+input[type="submit"] {
++
+background-color: #FF6F61;
++
+color: white;
++
+border: none;
++
+}
++
+.selected {
++
+background-color: #4CAF50;
++
+color: white;
++
+}
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
++
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+0 commit comments
+Comments
+0 (0)
+Lock conversation
+ Comment
+Unsubscribe
+You're receiving notifications because you're subscribed to this thread.
